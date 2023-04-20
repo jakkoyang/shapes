@@ -1,0 +1,1 @@
+In this lab you will create a "canvas" on which to draw pixel art. The canvas will be printed to the console. Your code should also compute and print the amount of paint needed for the art if it were drawn on a real canvas.
