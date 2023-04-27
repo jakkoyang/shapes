@@ -15,4 +15,5 @@ public:
     void draw(); //override draw method from grid
     virtual const std::vector<Point> getPoints() const; //method is used in draw function in Grid
     float getPaintNeeded(); //return area of shapes. Area of line is 0
+    void addShape(AbstractShape);
 };

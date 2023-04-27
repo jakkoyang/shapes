@@ -30,3 +30,7 @@ float Canvas::getPaintNeeded(){ //iterates through every shape. Adds every float
     }
     return paintNeeded;
 }
+
+void Canvas::addShape(AbstractShape shape){
+    shapeList.push_back(shape);
+}
