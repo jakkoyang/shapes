@@ -19,7 +19,7 @@ string AbstractGrid::getPixelAtPoint(int x, int y, const vector<Point>& points) 
     }
 }
 
-void AbstractGrid::draw() const
+void AbstractGrid::draw() const //WILL OVERRIDE
 {
     const vector<Point> points = getPoints();
     for (int y = 0; y < height; y++) {
@@ -40,7 +40,7 @@ bool AbstractGrid::containsPoint(int x, int y, const vector<Point>& points) cons
     return false;
 }
 
-const vector<Point> AbstractGrid::getPoints() const
+const vector<Point> AbstractGrid::getPoints() const //ABSTRACT FUNCTION. WILL OVERRIDE
 {
     return vector<Point>();
 }

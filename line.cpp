@@ -7,12 +7,12 @@
 
 using namespace std;
 
-Line::Line(Point p1, Point p2){
+Line::Line(Point p1, Point p2){ //I want to initialize attibutes p1 and p2 with input points. How?
     this->p1 = p1;
     this->p2 = p2;
 }
 const vector<Point> Line::getPoints() const{
-    //how is this supposed to work?
+    //how is this supposed to work? What is this supposed to be? What do I return?
     int x2 = p2.getX();
     int x1 = p1.getX();
     int y1 = p1.getY();
@@ -35,6 +35,6 @@ const vector<Point> Line::getPoints() const{
       if (e2 <= dx) { error += dx; y1 += sy; }
     }
 }
-float Line::getArea() const{
+float Line::getArea() const{ //lines have no area
     return 0.0f;
 }
