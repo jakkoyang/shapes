@@ -7,8 +7,8 @@
 
 using namespace std;
 
-Circle::Circle(Point center, int radius){
-    this->center = center;
+Circle::Circle(Point center, int radius) : center(center){
+    // this->center = center;
     this->radius = radius;
 }
 
