@@ -14,5 +14,5 @@ protected:
     virtual const std::vector<Point> getPoints() const;
 public:
     AbstractGrid(int width, int height);
-    void draw() const;
+    virtual void draw() const;
 };

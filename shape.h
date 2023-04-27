@@ -4,7 +4,7 @@
 
 #include <vector>
 
-class AbstractShape {
+class AbstractShape { //abstract
 public:
     virtual const std::vector<Point> getPoints() const;
     virtual float getArea() const;
