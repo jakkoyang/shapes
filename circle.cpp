@@ -19,6 +19,8 @@ const vector<Point> Circle::getPoints() const{
     int y = radius;
     int error = 1 - radius;
 
+    vector<Point> points;
+
     do {
         // ADD POINT (x0 + x, y0 + y)
         // ADD POINT (x0 + y, y0 + x)
@@ -29,6 +31,15 @@ const vector<Point> Circle::getPoints() const{
         // ADD POINT (x0 + y, y0 - x)
         // ADD POINT (x0 + x, y0 - y)
 
+        points.push_back(Point(x0 + x, y0 + y));
+        points.push_back(Point(x0 + y, y0 + x));
+        points.push_back(Point(x0 - y, y0 + x));
+        points.push_back(Point(x0 - x, y0 + y));
+        points.push_back(Point(x0 - x, y0 - y));
+        points.push_back(Point(x0 - y, y0 - x));
+        points.push_back(Point(x0 + y, y0 - x));
+        points.push_back(Point(x0 + x, y0 - y));
+
         if (error < 0) {
             error += (2 * x) + 1;
         } else {
@@ -37,6 +48,7 @@ const vector<Point> Circle::getPoints() const{
         }
         x++;
     } while (y > x);
+    return points;
 }
 
 float Circle::getArea() const{
