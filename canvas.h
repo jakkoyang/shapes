@@ -10,10 +10,9 @@ private:
     //int height, width; //inherited
     string name;
     vector<AbstractShape> shapeList;
-    vector<Point> points;
 public:
     Canvas(int, int, string);
     void draw(); //override draw method from grid
-    virtual const std::vector<Point> getPoints() const;
+    virtual const std::vector<Point> getPoints() const; //method is used in draw function in Grid
     float getPaintNeeded(); //return area of shapes. Area of line is 0
 };

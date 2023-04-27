@@ -12,4 +12,6 @@ private:
     Point p2;
 public:
     Line(Point, Point);
+    const std::vector<Point> getPoints() const;
+    float getArea() const;
 };

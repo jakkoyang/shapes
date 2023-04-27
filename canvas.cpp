@@ -14,6 +14,7 @@ void Canvas::draw(){
     cout << "Author: " << name;
 }
 const vector<Point> Canvas::getPoints() const{
+    vector<Point> points;
     for(AbstractShape shape : shapeList){
         for(Point point : shape.getPoints()){
             points.push_back(point);
@@ -21,6 +22,7 @@ const vector<Point> Canvas::getPoints() const{
     }
     return points;
 }
+
 float Canvas::getPaintNeeded(){
     float paintNeeded = 0.0f;
     for(AbstractShape shape : shapeList){
