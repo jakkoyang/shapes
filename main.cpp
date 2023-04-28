@@ -22,7 +22,7 @@ int main()
 //    // Add line from (0,CANVAS_MAX_Y) to (CANVAS_MAX_X, 0)
     canvas.addShape(new Line(Point(0,CANVAS_MAX_Y), Point(CANVAS_MAX_X, 0)));
     // Add circle at center (CANVAS_SIZE / 2, CANVAS_SIZE / 2) with radius 20
-//    canvas.addShape(new Circle(Point(CANVAS_SIZE / 2, CANVAS_SIZE / 2), 20.0));
+    canvas.addShape(new Circle(Point(CANVAS_SIZE / 2, CANVAS_SIZE / 2), 20.0));
 //    // Add rectangle with upper left corner at (0,CANVAS_MAX_Y) and lower right corner at (CANVAS_MAX_X,0)
     canvas.addShape(new Rectangle(Point(0,CANVAS_MAX_Y), Point(CANVAS_MAX_X,0)));
 
@@ -37,6 +37,7 @@ int main()
     stickfig.addShape(new Line(Point(35, 12), Point(25, 7)));
     stickfig.addShape(new Line(Point(35, 12), Point(45, 7)));
     stickfig.addShape(new Line(Point(25, 16), Point(45, 16)));
+
     stickfig.draw();
     cout << endl << "Paint needed: " << fixed << setprecision(1) << stickfig.getPaintNeeded() << endl;
     

@@ -40,5 +40,5 @@ const vector<Point> Rectangle::getPoints() const{
 }
 
 float Rectangle::getArea() const{
-    return abs((p2.getX() - p1.getX()) * (p2.getY() - p1.getY()));
+    return (abs(p2.getX() - p1.getX())+1) * (abs(p2.getY() - p1.getY())+1);
 }
