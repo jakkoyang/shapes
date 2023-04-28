@@ -18,6 +18,6 @@ private:
     Point p2;
 public:
     Rectangle(Point, Point);
-    const std::vector<Point> getPoints() const;
+    virtual const std::vector<Point> getPoints() const;
     float getArea() const;
 };

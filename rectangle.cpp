@@ -22,10 +22,23 @@ l3(p2, Point(p1.getX(), p2.getY())), l4(Point(p1.getX(), p2.getY()), p1)    // c
 
 const vector<Point> Rectangle::getPoints() const{
     vector<Point> points;
-    //TODO
+    //efficiency? Redundant
+    for(Point point : l1.getPoints()){
+        points.push_back(point);
+    }
+    for(Point point : l2.getPoints()){
+        points.push_back(point);
+    }
+    for(Point point : l3.getPoints()){
+        points.push_back(point);
+    }
+    for(Point point : l4.getPoints()){
+        points.push_back(point);
+    }
+
     return points;
 }
 
 float Rectangle::getArea() const{
-    return (p2.getX() - p1.getX()) * (p2.getY() - p1.getY());
+    return abs((p2.getX() - p1.getX()) * (p2.getY() - p1.getY()));
 }

@@ -52,6 +52,7 @@ const vector<Point> Circle::getPoints() const{
 }
 
 float Circle::getArea() const{
-    float area = 3.14 * radius * radius;
+    float area = radius * radius;
+    area *= 3.14;
     return area;
 }

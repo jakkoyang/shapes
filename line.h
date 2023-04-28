@@ -8,7 +8,7 @@
 
 class Line : public AbstractShape{
 private:
-    Point p1; //??????
+    Point p1;
     Point p2;
 public:
     Line(Point, Point);

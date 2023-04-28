@@ -7,8 +7,7 @@
 
 using namespace std;
 
-Line::Line(Point p1, Point p2) : p1(p1), p2(p2){ //I want to initialize attibutes p1 and p2 with input points. How? TODO: FIX
-    // this->p1 = p1;
+Line::Line(Point p1, Point p2) : p1(p1), p2(p2){
     // this->p2 = p2;
 }
 const vector<Point> Line::getPoints() const{
